@@ -29,7 +29,8 @@ class App
         {
             sums.Add(_elf.Sum());
         }
-        Console.WriteLine(sums.Max());
+        sums.Sort();
+        Console.WriteLine(sums[^1] + sums[^2] + sums[^3]);
     }
 
 
