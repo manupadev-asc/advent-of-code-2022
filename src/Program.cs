@@ -1,7 +1,9 @@
 ﻿using System;
 
 class App{
+    static readonly string fileName = "input.txt";
     static void Main(){
-        Console.WriteLine("Hello World");
+        if (!File.Exists(fileName)) return;
+        
     }
 }
